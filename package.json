@@ -1,0 +1,12 @@
+{
+  "name": "convert-heic-files",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "heic-convert": "^1.2.4"
+  },
+  "scripts": {
+    "convert":"node index.js heic_folder=./heic_files/ output_folder=./output/"
+  }
+}
