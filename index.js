@@ -16,8 +16,8 @@ fs.readdir(heic_folder, (err, files) => {
     files.forEach(file => {
         
         (async () => {
-            console.log(file)
             const inputBuffer = await promisify(fs.readFile)(heic_folder+file);
+            
             const outputBuffer = await convert({
                 buffer: inputBuffer, // the HEIC file buffer
                 format: 'JPEG',      // output format
